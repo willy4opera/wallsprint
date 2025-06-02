@@ -1,0 +1,14 @@
+.tab-content .tab-pane{
+    width: 100%;
+}
+.icon-image-hover__active .img-hover{
+   display: none;
+}
+.tab-item-wrap:hover .icon-image-hover__active .img-hover, 
+.tab-item-wrap.active .icon-image-hover__active .img-hover{
+    display: block;
+}
+.tab-item-wrap:hover .icon-image-hover__active> img:first-child, 
+.tab-item-wrap.active .icon-image-hover__active> img:first-child{
+    display: none;
+}

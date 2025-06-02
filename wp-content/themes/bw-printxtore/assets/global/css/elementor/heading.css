@@ -1,0 +1,51 @@
+/*Begin Elementor Heading*/
+.elbzotech-text-editor-global p:last-child{
+    margin-bottom: 0px;
+}
+.elementor-widget.elementor-widget-bzotech-heading:not(:last-child) {
+    margin-bottom: 0px;
+}
+.elbzotech-heading-global__line{
+    display: block;
+    height: 2px;
+    width: 100%;
+}
+.mouse-cursor{
+ display:inline-block;
+  white-space: nowrap;
+  padding:10px;
+  background:#3498DB;
+  position:absolute; 
+  top:50%; left:50%; font-size:14px; text-transform:uppercase;
+  transform: translateY(-50%) translateX(-50%);
+  color:#fff;
+}
+.elbzotech-heading-global-style2 > span{
+  position: relative;
+  padding: 0 60px;
+  display: inline-block;
+}
+.elbzotech-heading-global-style2 > span .image_left{
+  position: absolute;
+  left: 0;
+  top:10px;
+}
+.elbzotech-heading-global-style2 > span .image_right{
+  position: absolute;
+  right: 0;
+  top:10px;
+}
+/*---------------*/
+.type-title_shadow{
+    position: absolute;
+    right: -228px;
+    color: #F0F0F0;
+    z-index: -1;
+    font-size: 70px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.class-title-shadow{
+  position: relative;
+  display: inline-block;
+}

@@ -1,0 +1,536 @@
+
+/*Begin Banner info elementor*/
+.item-custom-botton-e{
+    display: flex;
+}
+.background-overlay{
+    z-index: 1;
+}
+.background-overlay .background-overlay-color{
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    z-index: 1;
+}
+.elbzotech-banner-info-global-wrap{
+    position: relative;
+}
+
+.elbzotech-banner-info-global-wrap .elbzotech-banner-info{
+    z-index: 2;
+}
+
+.elbzotech-info-inner{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+/* hover effect banner default */
+.banners-effect .elbzotech-banner-info-global-elbzotech-bndf .elbzotech-banner-info-global-thumb{
+    border-radius: 15px;
+    position: relative;
+}
+.banners-effect .elbzotech-banner-info-global-elbzotech-bndf .elbzotech-banner-info-global-thumb::before{
+    position: absolute;
+    top: 0;
+    left: -75%;
+    z-index: 2;
+    display: block;
+    content: '';
+    width: 50%;
+    height: 100%;
+    background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+    background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+    -webkit-transform: skewX(-25deg);
+    transform: skewX(-25deg);
+}
+.banners-effect .elbzotech-banner-info-global-elbzotech-bndf .elbzotech-banner-info-global-thumb:hover::before{
+    -webkit-animation: shine .85s;
+    animation: shine .85s;
+}
+
+/* end hover effect banner default */
+.elbzotech-banner-info-global-elbzotech-bndf .elbzotech-banner-info-global-thumb a:hover{
+    cursor: pointer;
+}
+.elbzotech-banner-info-global-elbzotech-bndf .elbzotech-text-item{
+    margin: 0px;
+}
+.elbzotech-banner-info-global-elbzotech-bndf .elbzotech-banner-info{
+    display: flex;
+}
+.elbzotech-banner-info-global-elbzotech-bndf .btwrapinfo-container-flex-e, 
+.elbzotech-banner-info-global-elbzotech-bndf .elbzotech-bt-custom
+{
+    display: flex;
+}
+.wrap-flex-e-elbzotech-info-outer{
+    display: flex;
+}
+.info-banner2 .link-bg-banner{
+    position: absolute;
+    display: block;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    z-index: -1;
+}
+.inner-left{
+    left: 0;
+}
+.inner-right{
+    right: 0;
+}
+.inner-center{
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.inner-top{
+    top: 0;
+}
+.inner-bottom{
+    bottom: 0;
+}
+.inner-middle{
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+.elbzotech-banner-info-global-thumb{
+    transition: all 0.3s ease-out 0s;
+    -webkit-transition: all 0.3s ease-out 0s;
+}
+.elbzotech-banner-info-global-thumb img{
+    max-width: 100%;
+    transition: all 0.3s ease-out 0s;
+    -webkit-transition: all 0.3s ease-out 0s;
+}
+.elbzotech-banner-info-global-thumb.elbzotech-hidden img{
+    width: 100%;
+}
+@media(max-width: 767px){
+    .elbzotech-banner-info-global-thumb.elbzotech-hidden img{
+        width: auto;
+    }
+}
+.elbzotech-hidden .adv-thumb-link, 
+.elbzotech-banner-info-global-wrap.elbzotech-hidden
+{
+    overflow: hidden;
+}
+.elbzotech-inherit .adv-thumb-link{
+    overflow: inherit;
+}
+
+/*---------------End default--------------------*/
+/*---------------style 2--------------------*/
+.elbzotech-banner-info-global-style2 .icon-button-video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.elbzotech-banner-info-global-style2 .icon-button-video .icon-button-video__icon{
+    width: 120px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: relative;
+}
+
+.elbzotech-banner-info-global-style2 .icon-button-video .icon-button-video__icon:before{
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background: var(--bzo-main-color);
+    opacity: 0.4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    animation: zoom-in-zoom-out 1s ease infinite;
+     transition: all 1s ease-out 0s;
+    -webkit-transition: all 1s ease-out 0s;
+    margin: auto;
+}
+.elbzotech-banner-info-global-style2 .icon-button-video .icon-button-video__icon2{
+    width: 85px;
+    height: 85px;
+    background: var(--bzo-main-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    font-size: 40px;
+    color: #fff;
+    border-radius: 50%;
+}
+.elbzotech-banner-info-global-style2 .icon-button-video .icon-button-video__icon2 .icon-play-button{
+    margin-right: -7px;
+}
+
+.elbzotech-banner-info-global-style2 .icon-button-video img{
+    width: auto;
+}
+
+@keyframes zoom-in-zoom-out {
+  0% {
+    width: 90px;
+    height: 90px;
+  }
+  50% {
+    width: 120px;
+    height: 120px;
+  }
+  100% {
+    width: 90px;
+    height: 90px;
+  }
+}
+/*---------------End Style 2--------------------*/
+
+/*---------------style 3--------------------*/
+.elbzotech-banner-info-global-style3 .elbzotech-banner-info-global-thumb a{
+    display: flex;
+}
+.elbzotech-banner-info-global-style3 .info-banner{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+}
+
+.elbzotech-banner-info-global-style3 .product-price .woocommerce-Price-amount{
+    font-size: 20px;
+    font-weight: 700;
+}
+.elbzotech-banner-info-global-style3 .product-price del .woocommerce-Price-amount{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.elbzotech-banner-info-global-style3 .product-price .woocs_price_code{
+    gap:5px;
+}
+
+.elbzotech-banner-info-global-style3 .list-point__item{
+    position: absolute;
+        margin-top: -26px;
+    margin-left: -26px;
+}
+.elbzotech-banner-info-global-style3 .list-point__item .list-point__itempoint{
+    position: relative;
+}
+.elbzotech-banner-info-global-style3 .list-point__item .list-point__info{
+    position: absolute;
+    right: 32px;
+    bottom: 100%;
+    margin-bottom: 0px;
+    background: #fff;
+    box-shadow: 0px 6px 10px 0px #79636824;
+    padding: 15px 20px;
+     padding: 15px 20px;
+     min-width: 280px;
+     opacity: 0;
+     z-index: -1;
+     transition: all 0.3s ease-out 0s;
+     border-radius: 5px 5px 0px 5px;
+}
+.elbzotech-banner-info-global-style3 .list-point__item.active-yes .list-point__info,
+.elbzotech-banner-info-global-style3 .list-point__item :hover .list-point__info
+{
+     opacity: 1;
+     z-index: 1;
+     margin-bottom: 20px;
+}
+.elbzotech-banner-info-global-style3 .list-point__item .list-point__info .title_product{
+    line-height: 36px;
+    margin-bottom: 5px;
+}
+.elbzotech-banner-info-global-style3 .product-price .woocs_price_code {
+    justify-content: end;
+}
+.elbzotech-banner-info-global-style3 .list-point__item .list-point__info:after{
+    content: '';
+    width: 0px;
+    height: 0px;
+    border-left: 25px solid transparent;
+    border-right: 0px solid transparent;
+    border-top: 20px solid #fff;
+    display: inline-block;
+    position: absolute;
+    top: 100%;
+    right: 0;
+}
+.elbzotech-banner-info-global-style3 .list-point__item .point span{
+    display: flex;
+    width: 28px;
+    height: 28px;
+    background: #fff;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border-radius: 50%;
+    transition: all 1s ease-out 0s;
+    -webkit-transition: all 1s ease-out 0s;
+    border: 4px solid var(--bzo-main-color);
+}
+
+.elbzotech-banner-info-global-style3 .list-point__item .point{
+    display: flex;
+    width: 64px;
+    height: 64px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: relative;
+}
+.elbzotech-banner-info-global-style3 .list-point__item .point:after
+{
+    position: absolute;
+    content: '';
+   width: 48px;
+    height: 48px;
+    border: 1px solid var(--bzo-main-color);
+    border-radius: 50%;
+    animation: zoom-in-zoom-out-point2 1s ease infinite;
+     transition: all 1s ease-out 0s;
+    -webkit-transition: all 1s ease-out 0s;
+}
+.elbzotech-banner-info-global-style3 .list-point__item .point:before
+{
+    position: absolute;
+    content: '';
+    width: 32px;
+    height: 32px;
+    border: 1px solid var(--bzo-main-color);
+    border-radius: 50%;
+    animation: zoom-in-zoom-out-point1 1s ease infinite;
+     transition: all 1s ease-out 0s;
+    -webkit-transition: all 1s ease-out 0s;
+}
+.elbzotech-banner-info-global-style3 .list-point__item .point:hover:before,
+.elbzotech-banner-info-global-style3 .list-point__item .point:hover:after{
+    border-color:  var(--bzo-main-color);
+}
+.elbzotech-banner-info-global-style3 .list-point__item .point:hover span{
+    background: var(--bzo-main-color);
+    color: #fff;
+}
+@keyframes zoom-in-zoom-out-point {
+  0% {
+    width:27px;
+    height:27px;
+  }
+  50% {
+    width: 30px;
+    height: 30px;
+  }
+  100% {
+    width: 33px;
+    height: 33px;
+  }
+}
+@keyframes zoom-in-zoom-out-point1 {
+  0% {
+    width: 32px;
+    height: 32px;
+  }
+  50% {
+    width: 40px;
+    height: 40px;
+  }
+  100% {
+    width: 48px;
+    height: 48px;
+  }
+}
+@keyframes zoom-in-zoom-out-point2 {
+  0% {
+    width: 48px;
+    height: 48px;
+    opacity: 1;
+  }
+  50% {
+    width: 56px;
+    height: 56px;
+  }
+  100% {
+    width: 64px;
+    height: 64px;
+    opacity: 0.1;
+  }
+}
+@media(max-width: 1200px){
+    .elbzotech-banner-info-global-style3 .list-point__item .list-point__info{
+        display: none;
+    }
+    .elbzotech-banner-info-global-style3 .list-point__item .point span {
+        width: 15px;
+        height: 15px;
+        border: 2px solid var(--bzo-main-color);
+    }
+}
+/*End banner info elementor*/
+
+
+/*---------------style 4--------------------*/
+.elbzotech-banner-info-global-style4 .elbzotech-banner-info-global-thumb{
+    position: relative;
+}
+.elbzotech-banner-info-global-style4:hover .adv-thumb-link-cate img{
+    transition: all 12s ease;
+     transform: scale(1.2); 
+}
+.elbzotech-banner-info-global-style4 .adv-thumb-link-cate:before{
+      position: absolute;
+    left: 0;
+    right: 0;
+    top:0;
+    bottom: 0;
+    content: '';
+    background: #00000040;
+    opacity: 0;
+    transition: all .3s ease;
+    z-index: 1
+}
+.elbzotech-banner-info-global-style4:hover .adv-thumb-link-cate:before{
+    opacity: 1;
+}
+.elbzotech-banner-info-global-style4 .title_banner {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom:20px;
+    text-align: center;
+     transition: all .3s ease;
+}
+.elbzotech-banner-info-global-style4 .info  {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top:0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transform: scale(0); 
+    transition: all .3s ease;
+    z-index: 1;
+    padding: 0px 15px;
+}
+.elbzotech-banner-info-global-style4:hover .info  {
+    transform: scale(1); 
+}
+.elbzotech-banner-info-global-style4 .info .info-title {
+    margin-bottom: 15px;
+}
+.elbzotech-banner-info-global-style4 .info .desc {
+    margin-bottom: 20px;
+}
+
+.elbzotech-banner-info-global-style4:hover .title_banner  {
+    opacity: 0;
+    bottom: -30px;
+}
+@media(max-width: 1200px){
+    .elbzotech-banner-info-global-style4 .info .info-title,
+    .elbzotech-banner-info-global-style4 .title_banner {
+        font-size: 24px;
+        line-height: 30px;
+    }
+    .elbzotech-banner-info-global-style4 .info .desc  {
+        font-size: 16px;
+    }
+}
+.elbzotech-banner-info-global-style5 .count-up-item{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 8px 32px;
+    background:#2D3150;
+    color: #fff;
+    border-radius: 5px;
+}
+.elbzotech-banner-info-global-style5 .count-up-item .count-up{
+    line-height: 68px;
+}
+@media(max-width: 1366px){
+    .elbzotech-banner-info-global-style5 .count-up-item .count-up {
+        line-height: 40px;
+        font-size: 34px;
+    }
+    .elbzotech-banner-info-global-style5 .count-up-item .title {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .elbzotech-banner-info-global-style5 .count-up-item{
+        padding: 8px 20px;
+    }
+}
+@media(max-width: 767px){
+    .elbzotech-banner-info-global-style5 .count-up-item{
+        position: unset;
+        margin-bottom: 10px;
+    }
+}
+.elbzotech-banner-info-global-category .adv-thumb-link{
+    position: relative;
+}
+.elbzotech-banner-info-global-category .adv-thumb-link:before{
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height:40%;
+    background: linear-gradient(0deg, #000 0%, rgba(42, 42, 42, 0.00) 100%);
+}
+.elbzotech-banner-info-global-category .info{
+    position: absolute;
+    left: 23px;
+    bottom: 15px
+}
+.elbzotech-banner-info-global-category .info{
+    position: absolute;
+    left: 23px;
+    bottom: 0px;
+        transition: all 0.3s ease-out 0s;
+    -webkit-transition: all 0.3s ease-out 0s;
+}
+.elbzotech-banner-info-global-category:hover .info{
+    bottom: 22px
+}
+.elbzotech-banner-info-global-category .info .count {
+    opacity: 0;
+        transition: all 0.3s ease-out 0s;
+    -webkit-transition: all 0.3s ease-out 0s;
+
+}
+.elbzotech-banner-info-global-category:hover .info .count {
+    opacity: 1;
+}
+@media(max-width: 767px){
+    .elbzotech-banner-info-global-category .info-title{
+        font-size: 16px;
+        line-height: 20px;
+    }
+}

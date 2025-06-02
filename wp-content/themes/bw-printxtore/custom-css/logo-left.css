@@ -1,0 +1,24 @@
+/* Custom CSS to move the logo to the left */
+/* Created on: $(date) */
+
+/* For Header 1 */
+.main-header1 .logo-wrap {
+    margin-right: auto; /* Pushes everything else to the right */
+    padding-left: 0; /* Removes any left padding */
+}
+
+/* General logo positioning */
+.logo-default {
+    margin-right: auto; /* Pushes everything else to the right */
+    padding-left: 0 !important; /* Removes any left padding */
+}
+
+/* Adjusts flex container */
+.flex-wrapper.justify_content-space-between {
+    justify-content: flex-start !important; /* Changes from space-between to flex-start */
+}
+
+/* Ensures menu items stay to the right */
+.header-nav-default {
+    margin-left: auto; /* Pushes nav to the right */
+}

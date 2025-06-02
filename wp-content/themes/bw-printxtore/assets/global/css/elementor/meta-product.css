@@ -1,0 +1,23 @@
+.elementor-widget-bzotech-meta-product-global .posted_in label, 
+.elementor-widget-bzotech-meta-product-global .tagged_as label
+{
+	margin-right: 10px;
+}
+
+.elementor-widget-bzotech-meta-product-global{
+	font-size: 14px;
+}
+.elementor-widget-bzotech-meta-product-global .sku, 
+.elementor-widget-bzotech-meta-product-global .meta-item-list a, 
+.elementor-widget-bzotech-meta-product-global .woocommerce-review-link, 
+.elementor-widget-bzotech-meta-product-global .count{
+	font-weight: 500;
+	color: var(--bzo-title_typo-color);
+}
+.elementor-widget-bzotech-meta-product-global .woocommerce-review-link:hover, 
+.elementor-widget-bzotech-meta-product-global .meta-item-list a:hover{
+	color: var(--bzo-main-color2);
+}
+.elementor-template_single_rating .total-sold{
+	display: none;
+}

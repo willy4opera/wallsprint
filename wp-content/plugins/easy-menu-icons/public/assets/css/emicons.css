@@ -1,0 +1,9 @@
+.menu-item a {
+  display: inline-table;
+}
+.menu-item a.icon-left {
+  margin-right: 7px;
+}
+.menu-item a.icon-right {
+  margin-left: 7px;
+}/*# sourceMappingURL=emicons.css.map */

@@ -1,0 +1,276 @@
+.element-pricing-table-global-.pricing-active-yes {
+    background-color: var(--bzo-main-color);
+   
+}
+.element-pricing-table-global- {
+    padding: 50px 40px;
+    border-radius: 5px;
+}
+.element-pricing-table-global-.pricing-active-yes .label-pricing {
+    color: white;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    display: inline-block;
+    letter-spacing: 0.005em;
+    border-radius: 5px;
+    background: var(--bzo-title_typo-color);
+    padding: 12px 24px;
+    position: absolute;
+    top: -23px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.element-pricing-table-global-.pricing-active-yes .title-pricing-table {
+    color: white;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 24px;
+    text-align: center;
+    transition: all .3s linear;
+}
+.element-pricing-table-global- .desc-pricing-table {
+    text-align: center;
+    letter-spacing: 0.005em;
+}
+.element-pricing-table-global-.pricing-active- .desc-pricing-table {
+    color: var(--bzo-body_typo-color);
+}
+.element-pricing-table-global-.pricing-active-yes .desc-pricing-table {
+    color: #fff;
+}
+.element-pricing-table-global- .price-pricing-table {
+    color: white;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: 0.0025em;
+}
+.element-pricing-table-global-.pricing-active-yes .active-style__yes,
+.element-pricing-table-global-.pricing-active-yes .active-style__yes .list-pricing-table__text
+ {
+    color: #fff;
+    opacity: 1;
+}
+.element-pricing-table-global- .list-pricing-table__text {
+    color: var(--bzo-title_typo-color);
+    opacity: 0.65;
+    margin-left: 8px;
+    vertical-align: top;
+}
+.element-pricing-table-global-.pricing-active-yes .active-style__ ,
+.element-pricing-table-global-.pricing-active-yes .active-style__ .list-pricing-table__text {
+    color: #fff;
+    opacity: 0.65;
+}
+.element-pricing-table-global-.pricing-active-yes .list-pricing-table {
+    border-top: 1px solid #fff;
+}
+.element-pricing-table-global- .list-pricing-table {
+    border-top: 1px solid #D6D6D6;
+    padding-top: 20px;
+}
+.element-pricing-table-global- .list-pricing-table a {
+    display: flex;
+    align-items: center;
+}
+.element-pricing-table-global- .list-pricing-table a:not(:last-child) {
+    margin-bottom: 15px;
+}
+.element-pricing-table-global-.pricing-active-yes .button-pricing {
+    color: white;
+    display: block;
+    border-radius: 5px;
+    background:var(--bzo-title_typo-color);
+    padding: 12px 0px;
+    margin-top: 30px;
+    text-align: center;
+    border: 1px solid var(--bzo-main-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.element-pricing-table-global- .dola {
+    font-size: 34px;
+}
+.element-pricing-table-global-.pricing-active-yes .button-pricing:hover {
+    background-color: white;
+    color: var(--bzo-title_typo-color);
+    border: 1px solid white;
+}
+.element-pricing-table-global-.pricing-active-yes .label-pricing {
+    display: block;
+}
+.element-pricing-table-global-.pricing-active- .title-pricing-table {
+    font-weight: 600;
+    font-size: 24px;
+    color: var(--bzo-title_typo-color);
+}
+.element-pricing-table-global-.pricing-active- .title-pricing-table:hover {
+    color: var(--bzo-main-color);
+    transition: all .3s linear;
+}
+.element-pricing-table-global-.pricing-active- div.list-pricing-table {
+    text-align: left;
+}
+.element-pricing-table-global-.pricing-active- {
+    text-align: center;
+}
+.element-pricing-table-global-.pricing-active- .price-pricing-table {
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: 0.0025em;
+    color: var(--bzo-title_typo-color);
+}
+.element-pricing-table-global-.pricing-active- .active-style__yes span {
+    color: var(--bzo-body_typo-color);
+    opacity: 1;
+}
+.element-pricing-table-global-.pricing-active- .active-style__ {
+    color: #B7B7B7;
+}
+.element-pricing-table-global-.pricing-active- {
+    background-color: white;
+    border-radius: 5px;
+}
+
+.element-pricing-table-global-.pricing-active- .button-pricing {
+    color: var(--bzo-title_typo-color);
+    border: 1px solid #D6D6D6;
+    display: block;
+    letter-spacing: 0.005em;
+    border-radius: 5px;
+    padding: 12px 0px;
+    margin-top: 30px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.element-pricing-table-global-.pricing-active- .button-pricing:hover {
+    background-color: var(--bzo-main-color);
+    color: white;
+    border: 1px solid var(--bzo-main-color);
+}
+.element-pricing-table-global- {
+    transition: all .3s;
+}
+.element-pricing-table-global-:hover {
+    box-shadow: 0px 5px 12px rgba(121, 99, 104, 0.14), 0px 0px 19px rgba(0, 0, 0, 0.12), 4px 5px 5px rgba(0, 0, 0, 0.15);
+}
+.element-pricing-table-global- .list-text-info__item {
+    text-align: center;
+}
+/* Begin element-pricing-table-global-style2*/
+.element-pricing-table-global-style2 {
+    background-color: white;
+    border-radius: 15px;
+    padding: 40px;
+    padding-top: 40px;
+    transition: all .3s linear;
+}
+.element-pricing-table-global-style2:hover,
+.element-pricing-table-global-style2.pricing-active-yes {
+    box-shadow: 0px 6px 10px rgba(121, 99, 104, 0.14), 0px 1px 18px rgba(0, 0, 0, 0.12);
+}
+.element-pricing-table-global-style2 .title-pricing-table {
+    line-height: 36px;
+    color: var(--bzo-gray-color);
+    margin-bottom: 14px;
+}
+.element-pricing-table-global-style2 .price-pricing-table {
+    color:var(--bzo-title_typo-color);
+    line-height: 72px;
+    padding-bottom: 20px;
+}
+.element-pricing-table-global-style2.pricing-active-yes .price-pricing-table {
+    color: var(--bzo-main-color);
+}
+.element-pricing-table-global-style2 .button-pricing {
+    padding: 12px 24px;
+    border: 1px solid var(--bzo-main-color);
+    line-height: 24px;
+    text-transform: uppercase;
+    color: var(--bzo-main-color);
+    border-radius: 5px;
+    display: block;
+    margin-bottom: 20px;
+}
+.element-pricing-table-global-style2 .button-pricing:hover {
+    color: #fff;
+    background: var(--bzo-main-color);
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.12);
+    border-color: var(--bzo-main-color);
+}
+.element-pricing-table-global-style2 .list-pricing-table .item-link .list-pricing-table__text {
+    vertical-align: top;
+    padding-left: 8px;
+}
+.element-pricing-table-global-style2 .list-pricing-table .item-link {
+    align-items: center;
+}
+.element-pricing-table-global-style2 .list-pricing-table .item-link {
+    color: var(--bzo-gray-color);
+    margin-bottom: 12px;
+}
+.element-pricing-table-global-style2 .list-pricing-table .active-style__yes:hover{
+    color: var(--bzo-main-color);
+}
+.element-pricing-table-global-style2 .list-pricing-table .active-style__ {
+    opacity: 0.65;
+}
+.element-pricing-table-global-style2 .desc-pricing-table {
+    text-align: left;
+    padding-top: 20px;
+    border-top: 1px solid var(--bzo-border-color);
+    padding-bottom: 20px;
+}
+.element-pricing-table-global-style2 .label-pricing {
+    position: absolute;
+    top: -15px;
+    right: -24px;
+}
+.element-pricing-table-global-style2.pricing-active-yes .button-pricing {
+    background-color: var(--bzo-main-color);
+    color: white;
+    border: 1px solid var(--bzo-main-color);
+}
+.element-pricing-table-global-style2.pricing-active-yes .button-pricing:hover {
+    color:var(--bzo-main-color);
+    background: #fff;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.12);
+    border-color: var(--bzo-main-color);
+}
+/* End element-pricing-table-global-style2*/
+@media(max-width: 1440px){
+    .element-pricing-table-global-style2 .label-pricing{
+        max-width: 60px;
+    }
+}
+@media(max-width: 1200px){
+    .element-pricing-table-global-style2 .title-pricing-table {
+        font-size: 22px;
+        line-height: 30px;
+    }
+    .element-pricing-table-global-style2 .price-pricing-table {
+        font-size: 35px;
+        line-height: 40px;
+    }
+}
+@media(max-width: 767px){
+    .element-pricing-table-global- {
+        padding: 30px 20px;
+    }
+    .element-pricing-table-global-style2{
+        padding: 30px 20px;
+    }
+    .element-pricing-table-global-style2 .label-pricing {
+        max-width: 40px;
+        right: 0;
+    }
+}

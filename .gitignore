@@ -1,6 +1,5 @@
 # WordPress core files and directories that shouldn't be in version control
 /wp-config.php
-/wp-content/uploads/
 /wp-content/upgrade/
 /wp-content/cache/
 /wp-content/backup-db/
@@ -8,7 +7,7 @@
 /wp-content/blogs.dir/
 /wp-content/advanced-cache.php
 /wp-content/wp-cache-config.php
-
+/Backups
 # WordPress plugins and themes that you might want to exclude
 # Uncomment if you want to exclude plugins and themes
 # /wp-content/plugins/

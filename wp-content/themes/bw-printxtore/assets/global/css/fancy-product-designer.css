@@ -1,0 +1,35 @@
+.product-detail-gallery .fpd-product-designer-wrapper{
+	margin-top: 30px;
+}
+.fpd-blue-btn, .fpd-secondary-btn{
+	border: 1px solid var(--bzo-main-color);
+    color: var(--bzo-main-color);
+    text-transform: capitalize;
+    font-weight: 700;
+    padding: 11px 25px;
+    font-size: 16px;
+    line-height: 24px;
+    border-radius: 0px;
+    display: inline-block;
+    cursor: pointer;
+    z-index: 1;
+    position: relative;
+    font-family: var(--bzo-body_typo-font-family);
+    overflow: hidden;
+    transition: .3s;
+    background: #fff;
+    position: relative;
+    overflow: hidden;
+}
+.fpd-blue-btn:hover, .fpd-secondary-btn:hover{
+	color: #fff;
+    background: var(--bzo-title_typo-color);
+    border-color: var(--bzo-title_typo-color);
+}
+#fpd-start-customizing-button{
+        margin-top: 30px;
+    margin-bottom: 0;
+}
+.fpd-container fpd-actions-bar{
+    overflow-x: auto;
+}

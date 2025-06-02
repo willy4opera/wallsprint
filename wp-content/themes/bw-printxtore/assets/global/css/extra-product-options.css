@@ -1,0 +1,135 @@
+.tm-extra-product-options .tc-epo-label,
+.tm-extra-product-options .tc-epo-label.tm-section-label{
+	font-size: 14px;
+    margin: 0px;
+}
+.tm-extra-product-options .ui-tm-datepicker-trigger::before{
+	border-color: var(--bzo-border-color);
+	border: none!important;
+}
+.tm-extra-product-options{
+	margin-bottom: 30px;
+}
+.tm-epo-field.tmcp-date{
+	height: 48px;
+}
+.tc-extra-product-options .after-amount, .tc-extra-product-options .before-amount {
+    color: var(--bzo-body_typo-color);
+}
+.tc-extra-product-options .tmcp-field-wrap .price.tc-price{
+	color: var(--bzo-title_typo-color);
+	    font-weight: 500;
+}
+.tc-extra-product-options .tmcp-field-wrap .price.tc-price ins{
+	color: var(--bzo-main-color);
+	    text-decoration: none;
+}
+.tm-extra-product-options .tmcp-field-wrap .tc-price del {
+    font-weight: 500;
+    color: #727272;
+    font-size: 16px!important;
+    font-weight: 400;
+    text-decoration: line-through;
+}
+.tm-range-picker.noui-show-tooltip {
+    margin: calc(1em + 22px) 0px;
+}
+.tm-extra-product-options ul.tmcp-ul-wrap li.tmcp-field-wrap, .tm-extra-product-options ul.tmcp-ul-wrap li.tmcp-field-wrap .tmcp-field-wrap-inner{
+	align-items: center;
+}
+.tc-extra-product-options .tmcp-field-wrap .tm-show-picker-value{
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: inherit;
+    border-color: var(--bzo-border-color);
+}
+.tc-extra-product-options .sp-replacer.epo{
+    border-radius: 0;
+    border-color: var(--bzo-border-color);
+}
+.tm-extra-product-options input.tm-epo-field.tmcp-upload {
+    height: auto;
+    line-height: normal;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+.tm-extra-product-options input[type="file"]::file-selector-button {
+	border: 1px solid var(--bzo-main-color);
+	text-transform: capitalize;
+	font-weight: 600;
+	padding: 11px 25px;
+	font-size: 16px;
+	background-color: var(--bzo-main-color);
+	transition: 0.3s;
+	color: #fff;
+	line-height: 24px;
+	cursor: pointer;
+}
+
+.tm-extra-product-options input[type="file"]::file-selector-button:hover {
+  background-color: #fff;
+  color: var(--bzo-main-color);
+}
+.tc-epo-element-product-container-cart > p,
+.tc-epo-element-product-container-wrap .tm-quantity, .tc-epo-element-product-container-wrap .tm-quantity-alt{
+    text-align: left;
+}
+.tc-epo-element-product-container-cart{
+    justify-content: start;
+}
+.product-detail-info .tc-epo-element-product-container-cart .product-price .woocommerce-Price-amount{
+    font-size: 20px;
+}
+.tc-epo-element-product-container-cart .product-description p:last-child{
+   margin-bottom: 0;
+}
+.tm-extra-product-options .tc-col-auto, .tm-extra-product-options .tc-cell.tc-col-auto, .tc-cell.tc-col-auto, .tc-col-auto{
+    margin: 0;
+}
+.tm-extra-product-options-totals .amount,
+.tm-extra-product-options-totals .amount.options, .tm-extra-product-options-totals .amount.fees, .tm-extra-product-options-totals .amount.subscription-fee{
+    font-weight: 500;
+    font-size: 20px!important;
+    color: var(--bzo-title_typo-color)!important;
+}
+.tc-extra-product-options select{
+    padding-left: 10px;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    position: relative;
+}
+.tc-chars,
+.tc-max-file-size{
+    font-size: 12px;
+}
+.tc-totals-form dl.tm-extra-product-options-totals {
+    gap: var(--tcgap);
+}
+dl.tm-extra-product-options-totals dt{
+    color: var(--bzo-title_typo-color);
+    max-width: 36%;
+    max-width: calc((100% / calc(100 / 36) - ((calc(100 / 36) - 1) / calc(100 / 36)) * var(--tcgap)));
+}
+dl.tm-extra-product-options-totals dd{
+    max-width: 64%;
+    max-width: calc((100% / calc(100 / 64) - ((calc(100 / 64) - 1) / calc(100 / 64)) * var(--tcgap)));
+}
+.tm-epo-totals{
+    padding: 0px;
+    margin-bottom: 30px;
+}
+.tc-epo-metadata .cpf-img-on-cart{
+    margin: 0px;
+    width: 100px;
+}
+.woocommerce table.cart .tc-epo-metadata .cpf-img-on-cart img{
+    max-width: 100% !important;
+}
+.tc-epo-metadata .tc-value p{
+    display: flex;
+    align-items: center;
+}

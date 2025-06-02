@@ -1,0 +1,11 @@
+.menu-item {
+    a {
+        display: inline-table;
+        &.icon-left {
+            margin-right: 7px;
+        }
+        &.icon-right {
+            margin-left: 7px;
+        }
+    }
+}

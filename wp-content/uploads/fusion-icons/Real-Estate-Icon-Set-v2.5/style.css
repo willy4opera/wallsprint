@@ -1,0 +1,383 @@
+@font-face {
+  font-family: 'Real-Estate-Icon-Set';
+  src:
+    url('fonts/Real-Estate-Icon-Set.ttf?r4o23x') format('truetype'),
+    url('fonts/Real-Estate-Icon-Set.woff?r4o23x') format('woff'),
+    url('fonts/Real-Estate-Icon-Set.svg?r4o23x#Real-Estate-Icon-Set') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="real-estate-"], [class*=" real-estate-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'Real-Estate-Icon-Set' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.real-estate-add:before {
+  content: "\e900";
+}
+.real-estate-arrow_back:before {
+  content: "\e901";
+}
+.real-estate-arrow:before {
+  content: "\e902";
+}
+.real-estate-chevron_left:before {
+  content: "\e903";
+}
+.real-estate-chevron_right:before {
+  content: "\e904";
+}
+.real-estate-expand:before {
+  content: "\e905";
+}
+.real-estate-arrow-up:before {
+  content: "\e974";
+}
+.real-estate-close:before {
+  content: "\e906";
+}
+.real-estate-done:before {
+  content: "\e907";
+}
+.real-estate-menu:before {
+  content: "\e908";
+}
+.real-estate-search:before {
+  content: "\e909";
+}
+.real-estate-play_arrow:before {
+  content: "\e90a";
+}
+.real-estate-property_status:before {
+  content: "\e90b";
+}
+.real-estate-real_estate_agent:before {
+  content: "\e90c";
+}
+.real-estate-tips_and_updates:before {
+  content: "\e90d";
+}
+.real-estate-thumb_up:before {
+  content: "\e90e";
+}
+.real-estate-favorite:before {
+  content: "\e90f";
+}
+.real-estate-emoji_flags:before {
+  content: "\e910";
+}
+.real-estate-moving:before {
+  content: "\e911";
+}
+.real-estate-calendar_add_on:before {
+  content: "\e912";
+}
+.real-estate-grid_gallery:before {
+  content: "\e913";
+}
+.real-estate-gallery_thumbnail:before {
+  content: "\e914";
+}
+.real-estate-language:before {
+  content: "\e915";
+}
+.real-estate-checklist:before {
+  content: "\e916";
+}
+.real-estate-manage_search:before {
+  content: "\e917";
+}
+.real-estate-help:before {
+  content: "\e918";
+}
+.real-estate-info:before {
+  content: "\e919";
+}
+.real-estate-paid:before {
+  content: "\e91a";
+}
+.real-estate-call:before {
+  content: "\e91b";
+}
+.real-estate-chat:before {
+  content: "\e91c";
+}
+.real-estate-mail:before {
+  content: "\e91d";
+}
+.real-estate-translate:before {
+  content: "\e91e";
+}
+.real-estate-person_pin_circle:before {
+  content: "\e91f";
+}
+.real-estate-location:before {
+  content: "\e920";
+}
+.real-estate-share:before {
+  content: "\e921";
+}
+.real-estate-verified:before {
+  content: "\e922";
+}
+.real-estate-auto_awesome:before {
+  content: "\e923";
+}
+.real-estate-location_automation:before {
+  content: "\e924";
+}
+.real-estate-home_app:before {
+  content: "\e925";
+}
+.real-estate-diamond:before {
+  content: "\e926";
+}
+.real-estate-flight:before {
+  content: "\e927";
+}
+.real-estate-grade:before {
+  content: "\e928";
+}
+.real-estate-approval_delegation:before {
+  content: "\e929";
+}
+.real-estate-new_tag:before {
+  content: "\e92a";
+}
+.real-estate-home-2:before {
+  content: "\e92b";
+}
+.real-estate-guests_small:before {
+  content: "\e92c";
+}
+.real-estate-bedrooms_small:before {
+  content: "\e92d";
+}
+.real-estate-bathrooms_small:before {
+  content: "\e92e";
+}
+.real-estate-beds_small:before {
+  content: "\e92f";
+}
+.real-estate-square_foot_small:before {
+  content: "\e930";
+}
+.real-estate-block:before {
+  content: "\e931";
+}
+.real-estate-body_system:before {
+  content: "\e932";
+}
+.real-estate-check_in_out:before {
+  content: "\e933";
+}
+.real-estate-home:before {
+  content: "\e934";
+}
+.real-estate-villa:before {
+  content: "\e935";
+}
+.real-estate-holiday_village:before {
+  content: "\e936";
+}
+.real-estate-condo:before {
+  content: "\e937";
+}
+.real-estate-grass:before {
+  content: "\e938";
+}
+.real-estate-apartment:before {
+  content: "\e939";
+}
+.real-estate-farm:before {
+  content: "\e93a";
+}
+.real-estate-manufactured:before {
+  content: "\e93b";
+}
+.real-estate-mobile_home:before {
+  content: "\e93c";
+}
+.real-estate-property_type:before {
+  content: "\e93d";
+}
+.real-estate-guests:before {
+  content: "\e93e";
+}
+.real-estate-bedrooms:before {
+  content: "\e93f";
+}
+.real-estate-bathrooms:before {
+  content: "\e940";
+}
+.real-estate-beds:before {
+  content: "\e941";
+}
+.real-estate-construction:before {
+  content: "\e942";
+}
+.real-estate-square_foot:before {
+  content: "\e943";
+}
+.real-estate-sqft_price:before {
+  content: "\e944";
+}
+.real-estate-lot_area:before {
+  content: "\e94d";
+}
+.real-estate-hoa_fee:before {
+  content: "\e945";
+}
+.real-estate-garage_home:before {
+  content: "\e946";
+}
+.real-estate-local_parking:before {
+  content: "\e947";
+}
+.real-estate-date_range:before {
+  content: "\e948";
+}
+.real-estate-mode_cool:before {
+  content: "\e949";
+}
+.real-estate-mode_heat:before {
+  content: "\e94a";
+}
+.real-estate-mode_heat_cool:before {
+  content: "\e94b";
+}
+.real-estate-flatware:before {
+  content: "\e94c";
+}
+.real-estate-appliances:before {
+  content: "\e969";
+}
+.real-estate-style:before {
+  content: "\e94e";
+}
+.real-estate-media_room:before {
+  content: "\e94f";
+}
+.real-estate-interior_features:before {
+  content: "\e950";
+}
+.real-estate-laundry:before {
+  content: "\e96a";
+}
+.real-estate-home_storage:before {
+  content: "\e96b";
+}
+.real-estate-fireplace:before {
+  content: "\e96c";
+}
+.real-estate-curtains:before {
+  content: "\e96d";
+}
+.real-estate-desk:before {
+  content: "\e951";
+}
+.real-estate-energy_program_saving:before {
+  content: "\e952";
+}
+.real-estate-pets:before {
+  content: "\e953";
+}
+.real-estate-bedroom_baby:before {
+  content: "\e96e";
+}
+.real-estate-filter_hdr:before {
+  content: "\e954";
+}
+.real-estate-other_houses:before {
+  content: "\e955";
+}
+.real-estate-nest_multi_room:before {
+  content: "\e956";
+}
+.real-estate-location_home:before {
+  content: "\e957";
+}
+.real-estate-facilities:before {
+  content: "\e96f";
+}
+.real-estate-pool:before {
+  content: "\e970";
+}
+.real-estate-stores:before {
+  content: "\e958";
+}
+.real-estate-materials:before {
+  content: "\e959";
+}
+.real-estate-yard:before {
+  content: "\e95a";
+}
+.real-estate-outdoor_garden:before {
+  content: "\e95b";
+}
+.real-estate-flooring:before {
+  content: "\e95d";
+}
+.real-estate-foundation:before {
+  content: "\e95e";
+}
+.real-estate-solar_power:before {
+  content: "\e95f";
+}
+.real-estate-recycling:before {
+  content: "\e971";
+}
+.real-estate-light_mode:before {
+  content: "\e960";
+}
+.real-estate-cam_outdoor:before {
+  content: "\e972";
+}
+.real-estate-doorbell_visitor:before {
+  content: "\e973";
+}
+.real-estate-verified_user:before {
+  content: "\e95c";
+}
+.real-estate-interests:before {
+  content: "\e961";
+}
+.real-estate-transportation:before {
+  content: "\e962";
+}
+.real-estate-photo_camera:before {
+  content: "\e963";
+}
+.real-estate-handshake:before {
+  content: "\e964";
+}
+.real-estate-relax:before {
+  content: "\e965";
+}
+.real-estate-room_service:before {
+  content: "\e966";
+}
+.real-estate-food:before {
+  content: "\e967";
+}
+.real-estate-spa:before {
+  content: "\e968";
+}
+.real-estate-app-store-icon:before {
+  content: "\e975";
+}
+.real-estate-google-play-icon:before {
+  content: "\e976";
+}

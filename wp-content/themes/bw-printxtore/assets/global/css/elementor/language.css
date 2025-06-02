@@ -1,0 +1,29 @@
+
+.elbzotech-lang-global-demo-style .language-box-global .elbzotech-dropdown-list{
+	width: auto;
+    min-width: 120px;
+    padding: 10px 15px;
+    left: 0;
+    right: auto;
+}
+.elbzotech-lang-global-demo-style .language-box-global .elbzotech-dropdown-list .label-item-e{
+	display: flex;
+    align-items: center;
+    color: var(--bzo-body_typo-color);
+    gap: 5px;
+    font-size: 14px;
+}
+.elbzotech-lang-global-demo-style .dropdown-link{
+	display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.elbzotech-lang-global-demo-style .dropdown-link:hover, 
+.elbzotech-lang-global-demo-style .language-box-global .elbzotech-dropdown-list .label-item-e:hover{
+	color: var(--bzo-main-color);
+}
+.elbzotech-lang-global-demo-style .language-box-global .label-e i{
+	font-size: 12px;
+}
+

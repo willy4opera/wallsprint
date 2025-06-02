@@ -1,0 +1,140 @@
+/*Begin Elementor Accordion */
+.elbzotech-accordion-global-css .ui-icon{
+    display: none;
+}
+.elbzotech-accordion-global-css .box-icon-accor{
+    position: relative;
+    float: right;
+    font-size: 16px;
+
+}
+.elbzotech-accordion-global-css .box-icon-accor i{
+    position: absolute;
+    top: 0;
+    right: 0;
+    line-height: 28px;
+     padding: 0 10px;
+}
+.elbzotech-accordion-global-css .box-icon-accor .icon-accor-active{
+    opacity: 0;
+}
+.elbzotech-accordion-global-css .ui-state-active .box-icon-accor .icon-accor-active{
+    opacity: 1;
+}
+.elbzotech-accordion-global-css .ui-state-active .box-icon-accor .icon-accor{
+    opacity: 0;
+}
+.elbzotech-accordion-global-css.ui-accordion .ui-accordion-header{
+    background-color: transparent;
+    border: none;
+    padding: 16px 0;
+    border-bottom: 1px solid var(--bzo-border-color);
+    font-size: 18px;
+    color: var(--bzo-gray-color);
+    line-height: 28px;
+    font-weight: 500;
+    
+}
+.elbzotech-accordion-global-css.ui-accordion .ui-accordion-header .item-title-e{
+    margin-right: 30px;
+}
+@media(max-width: 1366px){
+    .elbzotech-accordion-global-css.ui-accordion .ui-accordion-header{
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+}
+@media(max-width: 767px){
+    .elbzotech-accordion-global-css.ui-accordion .ui-accordion-header{
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+.elbzotech-accordion-global-css.ui-accordion .ui-accordion-header.ui-accordion-header-active{
+    border: none;
+    color: var(--bzo-main-color);
+}
+.elbzotech-accordion-global-css.ui-accordion .ui-accordion-header:hover{
+    color: var(--bzo-main-color);
+}
+
+.elbzotech-accordion-global-css.ui-accordion .ui-accordion-content {
+    padding: 0;
+    border: none;
+    color: var(--bzo-body_typo-color);
+}
+.elbzotech-accordion-global-css.ui-accordion .ui-accordion-content.ui-accordion-content-active{
+    border-bottom: 1px solid var(--bzo-border-color);
+}
+.elbzotech-accordion-global-css .ui-accordion-content p:last-child{
+    
+}
+.elbzotech-accordion-global-css.ui-widget{
+    font-family:inherit;
+}
+/*----------------------*/
+.elbzotech-accordion-global-.ui-accordion .ui-accordion-header:first-child{
+     margin-top: 0px;
+}
+/*-------------------------------*/
+.elbzotech-accordion-global-style2 .box-icon-accor {
+    float: right;
+}
+/*End Elementor Accordion */
+.elbzotech-accordion-global-style2.elbzotech-accordion-global-css.ui-accordion .ui-accordion-header{
+    border: none;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.65), rgba(255, 255, 255, 0.65)), var(--bzo-main-color);
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 32px;
+    color: var(--bzo-title_typo-color);
+    padding: 20px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.elbzotech-accordion-global-style2.elbzotech-accordion-global-css .ui-accordion-header .item-title-e{
+    width: calc(100% - 32px);
+    margin: 0px;
+}
+.elbzotech-accordion-global-style2.elbzotech-accordion-global-css.ui-accordion .accordion-content{
+    padding: 0 20px;
+}
+
+.elbzotech-accordion-global-style2 .accordion-content{
+    color: #727272;
+    font-size: 16px;
+    line-height: 24px;
+    border: none;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.65), rgba(255, 255, 255, 0.65)), var(--bzo-main-color);
+}
+.elbzotech-accordion-global-css.elbzotech-accordion-global-style2 .box-icon-accor{
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), var(--bzo-main-color);
+    border-radius: 100%;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    padding: 0;
+    font-size: 15px;
+    overflow: hidden;
+    color: #fff;
+}
+.elbzotech-accordion-global-css.elbzotech-accordion-global-style2 .box-icon-accor i{
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    border-radius: 100%;
+    padding: 0px;
+}
+.elbzotech-accordion-global-style2.elbzotech-accordion-global-css.ui-accordion .ui-accordion-header.ui-accordion-header-active{
+    
+    border-radius: 5px 5px 0 0;
+}
+.elbzotech-accordion-global-style2.elbzotech-accordion-global-css.ui-accordion .ui-accordion-header.ui-accordion-header-active .box-icon-accor{
+    background: var(--bzo-main-color);
+}
+.elbzotech-accordion-global-style2.elbzotech-accordion-global-css.ui-accordion .ui-accordion-content{
+    padding-top: 0;
+}

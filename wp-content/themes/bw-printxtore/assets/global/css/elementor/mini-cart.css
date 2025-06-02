@@ -1,0 +1,342 @@
+
+/*Begin Mini cart elementor*/
+
+.mini_cart_item{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    position: relative;
+    border-bottom: 1px solid var(--bzo-border-color);
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    align-items: center;
+    gap: 15px;
+}
+.mini_cart_item .product-thumb{
+    width: 70px;
+    border: 1px solid var(--bzo-border-color);
+}
+.mini_cart_item .product-info{
+        width: calc(100% - 120px);
+}
+.mini_cart_item .product-thumb a img, 
+.mini_cart_item .product-thumb a{
+    display: block;
+    border-radius: 0px;
+}
+.mini-cart-content {
+    text-align: left;
+}
+.mini-cart-dropdown-left{
+    left: 0;
+}
+.mini-cart-dropdown-center{
+    left: calc(50% - 200px);
+}
+.mini-cart-dropdown-right{
+    right: 0;
+}
+.mini_cart_item .product-delete{
+    position: absolute;
+    right: 5px;
+    top: 10px;
+    width: 30px;
+    font-size: 14px;
+}
+.mini_cart_item .product-delete i{
+    color: #999;
+}
+.mini_cart_item .product-delete:hover i{
+    color: var(--bzo-main-color);
+}
+.mini_cart_item .product-info .product-title{
+    margin: 0;
+    font-weight: 500;
+    color: var(--bzo-title_typo-color);
+    font-size: var(--bzo-body_typo-font-size);
+}
+.total-default.hidden,
+i.elbzotech-close-mini-cart{
+    display: none;
+}
+.mini-cart-total{
+    padding-top: 10px;
+}
+.mini-cart-total .pull-left{
+    float: left;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--bzo-title_typo-color);
+}
+.mini-cart-total .pull-right{
+    float: right;
+    font-weight: 600;
+}
+.mini-cart-total .woocs_special_price_code{
+    font-size: 18px;
+}
+.mini-cart-dropdown- .woocommerce-Price-amount{
+    color: var(--bzo-main-color);
+    font-weight: 500;
+}
+.clearfix:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.mini-cart-button{
+    display: flex;
+    gap: 30px;
+         margin: 10px 0 0 0px;
+}
+.mini-cart-button .button{
+    
+    width: 50%;
+    text-align: center;
+    
+}
+.mini-cart-button .button:hover{
+    
+}
+.mini-cart-button .button.checkout{
+
+}
+.mini-cart-button .button{
+    position: relative;
+    overflow: hidden;
+}
+
+
+/*content style side*/
+.elbzotech-mini-cart-side-global .mini-cart-content {
+    position: fixed;
+    z-index: 10001;
+    background: #fff;
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.1);
+    width: 400px;
+    bottom: 0;
+    transition: all 0.3s ease-out 0s;
+    -webkit-transition: all 0.3s ease-out 0s;
+    padding: 10px 15px;
+    top: 0;
+}
+
+.elbzotech-mini-cart-side-right-global .mini-cart-content {
+    right: 0;
+     transform: translateX(450px);
+    -webkit-transform: translateX(450px);
+}
+.elbzotech-mini-cart-side-left-global .mini-cart-content {
+    left: 0;
+     transform: translateX(-450px);
+    -webkit-transform: translateX(-450px);
+}
+
+@media(max-width: 767px){
+    .elbzotech-mini-cart-side-global .mini-cart-content{
+        width: calc(100% - 40px);
+    }
+    .elbzotech-mini-cart-side-right-global .mini-cart-content {
+         transform: translateX(calc(100% + 50px));
+        -webkit-transform: translateX(calc(100% + 50px));
+    }
+    .elbzotech-mini-cart-side-left-global .mini-cart-content {
+         transform: translateX(calc(-100% - 50px));
+        -webkit-transform: translateX(calc(-100% - 50px));
+    }
+}
+.admin-bar .elbzotech-mini-cart-side-global .mini-cart-content{
+    top: 32px;
+}
+.elbzotech-mini-cart-side-global.open-side .mini-cart-content {
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+}
+.elbzotech-mini-cart-side-global .mini-cart-side-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    content: "";
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 100;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease-out 0s;
+    -webkit-transition: all 0.3s ease-out 0s;
+}
+.elbzotech-mini-cart-side-global .mini_cart_item:last-child {
+    border-bottom: 0;
+    margin-bottom: 15px;
+    padding-bottom: 0;
+}
+.elbzotech-mini-cart-side-global.open-side .mini-cart-side-overlay {
+    opacity: 1;
+    visibility: visible;
+}
+.elbzotech-mini-cart-side-global .elbzotech-close-mini-cart{
+    display: block;
+    position: absolute;
+    top: 10px;
+    font-size: 24px;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+        background: var(--bzo-main-color);
+}
+.elbzotech-mini-cart-side-left-global .elbzotech-close-mini-cart{
+    right: -40px;
+}
+.elbzotech-mini-cart-side-right-global .elbzotech-close-mini-cart{
+    left: -40px;
+}
+.elbzotech-mini-cart-side-global .mini-cart-footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    box-shadow: 0px -3px 5px 0px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    background: #fff;
+}
+
+/*content style dropdown*/
+.elbzotech-mini-cart-dropdown-global .list-mini-cart-item{
+    max-height: 269px!important;
+}
+.elbzotech-mini-cart-dropdown-global .mini-cart-content{
+    position: absolute;
+    right: 0;
+    top: 100%;
+    background: #fff;
+    padding: 20px;
+    width: 400px;
+    margin-top: 20px;
+    visibility: hidden;
+    opacity: 0;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.12);
+    border-radius: 5px;
+    transition: all 0.3s ease-out 0s;
+    -webkit-transition: all 0.3s ease-out 0s;
+    pointer-events: none;
+    line-height: 28px;
+    list-style: none;
+    z-index: 9992;
+}
+.elbzotech-mini-cart-dropdown-global .mini-cart-content>h2{
+    margin-bottom: 20px;
+    color: var(--bzo-main-color);
+}
+.elbzotech-mini-cart-dropdown-global .mini-cart-footer{
+    padding-top: 0px;
+}
+
+.elbzotech-mini-cart-dropdown-global:hover .mini-cart-content{
+    margin-top:0px;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: inherit;
+}
+
+
+/* Begin Style style1*/
+.elbzotech-mini-cart-global-style1{
+    cursor: pointer;
+    transition: all 0.3s ease-out 0s;
+    -webkit-transition: all 0.3s ease-out 0s;
+}
+
+.elbzotech-mini-cart-global-style1 .mini-cart-icon{
+   font-size: 24px;
+   color: var(--bzo-gray-color);
+   position: relative;
+   transition: all 0.3s ease-out 0s;
+    -webkit-transition: all 0.3s ease-out 0s;
+}
+.elbzotech-mini-cart-global-style1 .mini-cart-icon:hover{
+    color: var(--bzo-main-color);
+}
+.elbzotech-mini-cart-global-style1 .mini-cart-number{
+    position: absolute;
+    background-color: var(--bzo-main-color);
+    color: #fff;
+    font-weight: 500;
+    width: 15px;
+    height: 15px;
+    line-height: 15px;
+    font-size: 10px;
+    text-align: center;
+    border-radius: 50%;
+    right: -8px;
+    top: -4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.elbzotech-mini-cart-global-style1 .mini-cart-link{ 
+    border-radius: 40px;
+    text-align: center;    
+    display: flex;
+    padding: 0;
+}
+.elbzotech-mini-cart-global-style1 .mini-cart-text{
+    display: flex;
+}
+
+/* End Style 1*/
+/* Begin Style style2*/
+.elbzotech-mini-cart-global-style2{
+    cursor: pointer;
+    transition: all 0.3s ease-out 0s;
+    -webkit-transition: all 0.3s ease-out 0s;
+}
+
+.elbzotech-mini-cart-global-style2 .mini-cart-icon{
+   font-size: 24px;
+   color: var(--bzo-gray-color);
+   position: relative;
+   transition: all 0.3s ease-out 0s;
+    -webkit-transition: all 0.3s ease-out 0s;
+    width: 48px;
+    height: 48px;
+    background: #454545;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    display: flex;
+}
+.elbzotech-mini-cart-global-style2 .mini-cart-icon:hover{
+    color: var(--bzo-main-color);
+}
+.elbzotech-mini-cart-global-style2 .mini-cart-link{
+    display: flex;
+}
+.elbzotech-mini-cart-global-style2 .mini-cart-text{
+    display: flex;
+        flex-direction: column;
+}
+.elbzotech-mini-cart-global-style2 .mini-cart-number-e,
+.elbzotech-mini-cart-global-style2 .mini-cart-icon{
+        transition: all 0.3s ease-out 0s;
+    -webkit-transition: all 0.3s ease-out 0s;
+}
+/* End Style 2*/
+@media(max-width:1200px){
+    .elbzotech-mini-cart-dropdown-global .mini-cart-content{
+        border-radius: 0;
+    }
+}
+@media(max-width:767px){
+    .elbzotech-mini-cart-dropdown-global .mini-cart-content{
+        width: 100vw;
+    }
+    .elbzotech-mini-cart-dropdown-global .mini-cart-content{
+        border-radius: 0;
+    }
+}

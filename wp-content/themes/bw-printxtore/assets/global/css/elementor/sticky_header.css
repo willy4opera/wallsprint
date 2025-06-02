@@ -1,0 +1,16 @@
+.elementor-location-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+body {
+  padding-top: 100px; /* Adjust as needed based on header height */
+}
+
+@media (max-width: 767px) {
+    body {
+        padding-top: 60px; /* adjust for mobile */
+    }
+}

@@ -1,0 +1,103 @@
+/*Import*/
+/*************************************
+Compare Style
+***********************************************/
+body.woocommerce table{
+  color: var(--bzo-body_typo-color);
+   font-family: var(--bzo-body_typo-font-family);
+  font-size:var(--bzo-body_typo-font-size);
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+}
+body.woocommerce table.dataTable.compare-list tr.title td{
+    padding: 10px;
+}
+body.woocommerce> h1{
+    font-weight: 600;
+    background: var(--bzo-main-color);
+    font-size: 24px;
+    padding: 25px;
+}
+body.woocommerce> h1 a.close{
+    font-size: 14px;
+}
+body.woocommerce table.compare-list tbody th{
+    color: var(--bzo-gray-color);
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: 500;
+}
+body.woocommerce table.dataTable.compare-list tr.title td {
+    line-height: 20px;
+    font-size: 16px;
+    font-weight: 500;
+}
+body.woocommerce .woocommerce table.compare-list td img {
+    padding: 0px;
+    border-radius: 0px;
+    background: transparent;
+}
+.product-price > span, 
+.product-price ins{
+    color: var(--bzo-main-color);
+    font-size: 18px;
+    font-weight: 600;
+        text-decoration: none;
+}
+.product-price del{
+    color: #999999;
+    font-size: 16px;
+    font-weight: 400;
+    margin-right: 5px;
+}
+.woocommerce table.dataTable td {
+    padding: 10px;
+}
+.woocommerce .woocommerce table.compare-list .price td {
+    text-decoration: none;
+}
+.woocommerce table.compare-list .add-to-cart td a:not(.unstyled_button), 
+.woocommerce table.compare-list .add-to-cart td a{
+    border: 1px solid var(--bzo-main-color);
+    color: #fff;
+    text-transform: capitalize;
+    font-weight: 600;
+    padding: 12px 25px;
+    font-size: 16px;
+    line-height: 24px;
+    border-radius: 5px;
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    font-family: var(--bzo-body_typo-font-family);
+    overflow: hidden;
+    transition: .3s;
+    background: linear-gradient(180deg, var(--bzo-main-color) 0%, var(--bzo-main-color) 100%);
+    position: relative;
+    overflow: hidden;
+    letter-spacing: 1px;
+}
+.woocommerce table.compare-list .add-to-cart td a:not(.unstyled_button):hover, 
+.woocommerce table.compare-list .add-to-cart td a:not(.unstyled_button):focus, 
+.woocommerce table.compare-list .add-to-cart td a:hover, 
+.woocommerce table.compare-list .add-to-cart td a:focus
+{
+    background: #fff;
+    color: var(--bzo-main-color);
+}
+.woocommerce table.compare-list td img{
+	margin: 0;
+    padding: 0;
+    border: 0;
+}
+.woocommerce table.compare-list tr.title td{
+	text-transform: capitalize;
+	padding: 0;
+}
+.product-desc{
+	line-height: 24px;
+}
+.product-desc ul li{
+    list-style: none;
+}

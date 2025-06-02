@@ -1,0 +1,253 @@
+
+/*Begin Account manager popup content and dropdown list*/
+.elbzotech-account-manager-global .elbzotech-dropdown-list{
+    text-align: left;
+}
+.elbzotech-account-manager-global .elbzotech-dropdown-list li i{
+    margin-right: 10px;
+}
+ 
+.elbzotech-popup-open.elbzotech-popup-overlay{
+    opacity: 1;
+    visibility: visible;
+    z-index: 9992;
+}
+.elbzotech-login-form{
+    text-align: center;
+}
+.elbzotech-login-popup-content{
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    background: #fff;
+    top: 10%;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    border-radius: 0px;
+}
+.elbzotech-login-popup-content .popup-form{
+    padding: 50px;
+    text-align: left;
+    max-width: 100%;
+}
+i.elbzotech-close-popup{
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+    text-align: right;
+    opacity: 1;
+    visibility: visible;
+    padding: 30px
+}
+.popup-form{
+    max-width: 300px;
+    padding: 30px 0;
+    margin: auto;
+    display: none;
+}
+.popup-form.active{
+    display: block;
+}
+.ms-error, 
+.ms-done{
+    display: none;
+}
+.popup-form .message {
+    border-left: 4px solid var(--bzo-main-color);
+    padding: 8px 12px;
+    margin-left: 0;
+    margin-bottom: 20px;
+    background-color: #f0f0f0;
+    box-shadow: 0 0 1px 0 rgba(0,0,0,.1);
+    color: #999;
+    font-size: 12px;
+}
+.popup-form .ms-default{    
+    color: #999;
+    font-size: 12px;
+}
+.popup-form .login_error {
+    border-left: 4px solid #bf2c2c;
+    padding: 5px 15px;
+    margin-left: 0;
+    margin-bottom: 20px;
+    background-color: #fff;
+    box-shadow: none;
+    color: #bf2c2c;
+    font-size: 14px;
+}
+.popup-form .form-field{
+    margin-bottom: 20px;
+}
+.popup-form .form-field .input{
+    width: 100%;
+    background: #f0f0f0;
+    border: none;
+    border-radius: 0px;
+    height: 56px;
+    line-height: 56px;
+}
+.popup-form .elbzotech-bt-default{
+        height: auto;
+    padding: 15px 20px;
+}
+.forgetmenot{
+    text-align: left;
+}
+.forgetmenot .rememberme{
+    font-weight: 400;
+    margin-left: 5px;
+    cursor: pointer;
+}
+.elbzotech-bt-full{
+    width: 100%;
+}
+.form-header > h2{
+    margin: 0 0 30px;
+    font-size: 34px;
+    text-align: center;
+    font-family: var(--bzo-title_typo-font-family);
+}
+.form-header > .desc{
+    color: var(--bzo-gray-color);
+}
+.popup-form form{
+    margin-top: 30px;
+}
+.popup-form nav-form{
+    margin-top: 10px;
+}
+.popup-form form .submit{
+    margin-bottom: 12px;
+}
+.popup-form .nav-form{
+    margin-top: 23px;
+}
+.popup-form .nav-form #remembermep{
+    margin-top: -3px;
+}
+.popup-form .nav-form a{
+
+}
+.popup-form .nav-form a:first-child {
+    border-right: 1px solid var(--bzo-border-color);
+    margin-right: 10px;
+    padding-right: 10px;
+}
+.popup-form .nav-form a:last-child {
+    border-right: 0;
+    margin-right: 0;
+    padding-right: 0;
+}
+.popup-form .woocommerce-privacy-policy-text{
+
+}
+.popup-form #reg_passmail{
+    margin-bottom: 30px;
+}
+.elbzotech-account-manager-global{
+    transition: all 0.3s ease-out 0s;
+    -webkit-transition: all 0.3s ease-out 0s;
+    cursor: pointer;
+}
+.dropdowm-from-left .elbzotech-dropdown-list{
+    left: 0;
+    right: inherit;
+}
+.dropdowm-from-right .elbzotech-dropdown-list{
+    right: 0;
+    left: inherit;
+}
+.elbzotech-account-manager-global .button-account-manager *{
+    transition: all 0.3s ease-out 0s;
+    -webkit-transition: all 0.3s ease-out 0s;
+}
+.login-popup-content-wrap .elbzotech-close-popup{
+    right: 0;
+    top: 4px;
+    font-size: 22px;
+    color: #454545;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    line-height: 40px;
+    padding: 0;
+}
+.nextend-social-login>h3{
+    margin: 25px 0px;
+    position: relative;
+    z-index: 1;
+}
+.nextend-social-login>h3:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    right:0;
+    top: 50%;
+    height: 1px;
+    background: var(--bzo-border-color);
+    z-index: -1;
+}
+.nextend-social-login>h3 span{
+    padding: 0px 15px;
+    background: #fff;
+}
+
+/*--------------*/
+
+@media(max-width: 1200px){
+    i.elbzotech-close-popup{
+        font-size: 16px;
+    }
+    .elbzotech-login-popup-content{
+        max-width: 90%;
+    }
+}
+@media(max-width: 767px){
+    .popup-form .nav-form {
+        flex-direction: column;
+    }
+    .login-popup-content-wrap .elbzotech-close-popup{
+        right: 12px;
+        top: 16px
+    }
+    i.elbzotech-close-popup{
+        padding: 20px;
+    }
+    .elbzotech-login-popup-content .popup-form{
+        padding: 30px 20px;
+    }
+    .popup-form form {
+        margin-top: 20px;
+    }
+    .form-header > h2{
+        font-size: 24px;
+        padding-bottom: 20px;
+    }
+}
+/*End Account manager popup content and dropdown list*/
+/*Begin account Style default*/
+.elbzotech-account-global-default .button-account-manager{
+    display: flex;
+    font-size: 23px;
+}
+/*End account Style default*/
+
+/*Begin account Style 2*/
+.elbzotech-account-global-style2 .button-account-manager{
+    display: flex;
+    font-size: 16px;
+}
+.elbzotech-account-global-style2 .text-login-logout{
+    display: block;
+}
+/*End account Style 2*/
+
