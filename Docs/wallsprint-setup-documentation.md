@@ -1,167 +1,141 @@
-# WallSprint WordPress Installation Documentation
+# Wallsprint WordPress Setup Documentation
 
-## Overview
+## Environment Configuration
 
-This document outlines the complete setup process for the WallSprint WordPress site, including WordPress installation, database configuration, and Nginx web server setup.
+The WordPress installation uses environment variables for configuration, making it portable and secure across different environments.
 
-## Server Information
+### Environment Files
 
-- **Server IP Address**: 192.168.0.124
-- **Web Server**: Nginx
-- **Port**: 8090
-- **Domain/Hostname**: wallsprint.localhost
+- `.env`: Contains actual configuration values (not version controlled)
+- `.env.example`: Template for required environment variables (version controlled)
 
-## WordPress Installation
+### Required Environment Variables
 
-### 1. Download and Extract WordPress
+```env
+# Database Configuration
+DB_NAME=database_name
+DB_USER=database_user
+DB_PASSWORD=database_password
+DB_HOST=database_host
+DB_CHARSET=utf8
+DB_COLLATE=
 
-```bash
-wget https://wordpress.org/latest.zip
-unzip latest.zip
-mv wordpress/* .
+# WordPress Debug
+WP_DEBUG=true/false
+WP_DEBUG_LOG=true/false
+WP_DEBUG_DISPLAY=false
+WP_MEMORY_LIMIT=256M
+
+# Database Connection
+WP_USE_EXT_MYSQL=false
 ```
 
-### 2. Database Configuration
+## Dynamic URL Configuration
 
-```bash
-# Create MySQL database
-mysql -u root -e "CREATE DATABASE IF NOT EXISTS wallsprint_wp;"
+The installation uses dynamic URL detection, allowing the site to work across different environments without manual URL configuration.
 
-# Create database user
-mysql -u root -e "CREATE USER IF NOT EXISTS 'wallsprint'@'localhost' IDENTIFIED BY 'wallsprint@212345';"
+### URL Handling
 
-# Grant privileges
-mysql -u root -e "GRANT ALL PRIVILEGES ON wallsprint_wp.* TO 'wallsprint'@'localhost'; FLUSH PRIVILEGES;"
-```
+- URLs are dynamically detected based on the current server environment
+- Supports both HTTP and HTTPS protocols
+- Handles custom port numbers automatically
+- Special handling for CLI operations
 
-### 3. WordPress Configuration File
+### Database URL Settings
 
-```bash
-# Copy sample config file
-cp wp-config-sample.php wp-config.php
+The database maintains placeholder values for site URLs:
+- home: {{site_url}}
+- siteurl: {{site_url}}
 
-# Update database credentials
-sed -i "s/database_name_here/wallsprint_wp/g" wp-config.php
-sed -i "s/username_here/wallsprint/g" wp-config.php
-sed -i "s/password_here/wallsprint@212345/g" wp-config.php
+These placeholders allow WordPress to use the dynamic URL detection in wp-config.php.
 
-# Add security keys
-curl -s https://api.wordpress.org/secret-key/1.1/salt/ >> wp-config.php
-```
+## Configuration Files
 
-### 4. File Permissions
+### wp-config.php
 
-```bash
-# Set proper permissions
-find . -type d -exec chmod 755 {} \;
-find . -type f -exec chmod 644 {} \;
-chown -R nobody:nogroup .
-```
+The main configuration file includes:
+- Environment variable loading from .env
+- Dynamic URL detection
+- Database configuration
+- Debug settings
+- Memory limits
+- Security keys and salts
 
-## Nginx Server Configuration
+### Features
 
-### 1. Server Block Configuration
+1. Environment-based Configuration:
+   - Secure credential management
+   - Easy environment switching
+   - No hardcoded values
 
-The Nginx configuration file is located at: `/etc/nginx/conf.d/wallsprint.conf`
+2. Dynamic URL Detection:
+   - Automatic protocol detection (http/https)
+   - Server hostname detection
+   - Port number handling
+   - CLI mode support
 
-Key configuration details:
-```nginx
-server {
-    listen 8090;
-    http2 on;
-    server_name wallsprint.localhost 192.168.0.124;
-    
-    # SSL configuration
-    ssl_certificate /etc/letsencrypt/live/biwillzcomputers.com/fullchain.pem;
-    ssl_certificate_key /etc/letsencrypt/live/biwillzcomputers.com/privkey.pem;
-    ssl_protocols TLSv1.2 TLSv1.3;
-    
-    # Main application root
-    root /var/www/html/wallsprint;
-    index index.php index.html;
-    
-    # Handle PHP files
-    location ~ \.php$ {
-        fastcgi_pass unix:/run/php/php-fpm.sock;
-        fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
-        include fastcgi_params;
-        # Additional PHP configurations...
-    }
-    
-    # Security and other configurations...
-}
-```
+3. Database Configuration:
+   - Environment-based credentials
+   - UTF-8 character set
+   - Direct MySQL connection
 
-### 2. Applied Configuration Changes
+## Migration Steps
 
-- Changed listening port from 8089 to 8090
-- Added server IP address (192.168.0.124) to server_name directive
+When migrating to a new environment:
 
-### 3. Reload Nginx
+1. Copy `.env.example` to `.env`
+2. Update `.env` with new environment values
+3. No need to update URLs in the database
+4. Ensure proper file permissions:
+   - wp-config.php: 644
+   - .env: 600
 
-```bash
-systemctl reload nginx
-```
+## Development Guidelines
 
-## Database Information
-
-- **Database Name**: wallsprint_wp
-- **Database User**: wallsprint
-- **Database Password**: wallsprint@212345
-- **Database Host**: localhost
-
-## Accessing the Website
-
-The WordPress site can be accessed using:
-
-- **Local access**: http://wallsprint.localhost:8090
-- **Remote access**: http://192.168.0.124:8090
-
-## WordPress Admin
-
-After completing the web-based setup, the WordPress admin dashboard will be available at:
-
-- http://192.168.0.124:8090/wp-admin/
+1. Never commit `.env` file
+2. Always update `.env.example` when adding new environment variables
+3. Maintain the {{site_url}} placeholders in the database
+4. Use environment variables for all configuration values
 
 ## Troubleshooting
 
-### Common Issues
+1. Database Connection Issues:
+   - Verify .env database credentials
+   - Check database host accessibility
+   - Ensure proper user permissions
 
-1. **Port Conflicts**: If another service is using port 8090, change to a different port in the Nginx configuration file.
+2. URL Issues:
+   - Verify dynamic URL detection in wp-config.php
+   - Check for hardcoded URLs in database
+   - Verify server environment variables
 
-2. **PHP Processing Issues**: Verify the PHP-FPM socket path in the Nginx configuration matches the actual path of the PHP-FPM socket.
-
-3. **Permission Issues**: If WordPress cannot write to directories, check file permissions.
-
-### Checking Server Status
-
-```bash
-# Check Nginx status
-systemctl status nginx
-
-# Check port listening
-netstat -tulpn | grep 8090
-
-# Check Nginx configuration
-nginx -t
-```
-
-## Maintenance
-
-### Updating WordPress
-
-Updates can be performed through the WordPress admin dashboard or manually by downloading and replacing files.
-
-### Backup Strategy
-
-Regular backups should include:
-- WordPress files in /var/www/html/wallsprint
-- MySQL database (wallsprint_wp)
+3. Permission Issues:
+   - Check file permissions
+   - Verify web server user access
+   - Ensure .env file is readable
 
 ## Security Considerations
 
-- Keep WordPress, themes, and plugins updated
-- Use strong passwords
-- Consider implementing a security plugin
-- Regularly check for file integrity
-- Consider setting up a Web Application Firewall (WAF)
+1. Environment Variables:
+   - Protect .env file
+   - Use strong passwords
+   - Limit database user permissions
+
+2. File Permissions:
+   - Restrict .env access
+   - Maintain secure wp-config.php permissions
+   - Regular security audits
+
+## Maintenance
+
+1. Regular Tasks:
+   - Update environment variables as needed
+   - Review and update debug settings
+   - Monitor log files
+   - Backup database and files
+
+2. Updates:
+   - Document any configuration changes
+   - Update .env.example as needed
+   - Maintain version control
+   - Test in staging environment first

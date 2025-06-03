@@ -8,13 +8,32 @@
 /wp-content/advanced-cache.php
 /wp-content/wp-cache-config.php
 /Backups
+
 # WordPress plugins and themes that you might want to exclude
 # Uncomment if you want to exclude plugins and themes
 # /wp-content/plugins/
 # /wp-content/themes/
 
-# Log files
+# Environment files
+.env
+.env.*
+!.env.example
+
+# WordPress debug logs
 *.log
+debug.log
+/wp-content/debug.log
+
+# Local configuration files
+wp-config-local.php
+wp-config.php.backup
+
+# IDE and editor files
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
 
 # OS generated files
 .DS_Store
@@ -25,8 +44,11 @@
 ehthumbs.db
 Thumbs.db
 
-# Editor files
-.idea/
-.vscode/
-*.swp
-*.swo
+# Temporary files
+*.tmp
+*.temp
+*.bak
+
+# Cache files
+.php_cs.cache
+.phpunit.result.cache

@@ -858,5 +858,3 @@ if(!function_exists('bzotech_load_more_post')){
 }
 
 
-wp_enqueue_style('sticky-header', get_template_directory_uri() . '/custom-css/sticky-header.css', array(), '1.0');
-
