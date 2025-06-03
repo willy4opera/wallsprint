@@ -1,0 +1,57 @@
+/* Disable preview and dropdown for specific menu items - Enhanced version */
+#nav-menu-item-24856 .preview-image,
+#nav-menu-item-24854 .preview-image,
+#nav-menu-item-24856 .mega-menu,
+#nav-menu-item-24854 .mega-menu,
+#nav-menu-item-24856.has-image-preview .preview-image,
+#nav-menu-item-24854.has-image-preview .preview-image,
+#nav-menu-item-24856.has-mega-menu .mega-menu,
+#nav-menu-item-24854.has-mega-menu .mega-menu {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    height: 0 !important;
+    width: 0 !important;
+    position: absolute !important;
+    pointer-events: none !important;
+    clip: rect(1px, 1px, 1px, 1px) !important;
+    clip-path: inset(50%) !important;
+}
+
+/* Remove dropdown indicators */
+#nav-menu-item-24856 > a .indicator-icon,
+#nav-menu-item-24854 > a .indicator-icon {
+    display: none !important;
+}
+
+/* Remove dropdown classes */
+#nav-menu-item-24856.menu-item-has-children,
+#nav-menu-item-24854.menu-item-has-children,
+#nav-menu-item-24856.has-mega-menu,
+#nav-menu-item-24854.has-mega-menu {
+    background-image: none !important;
+}
+
+/* Ensure links work */
+#nav-menu-item-24856 > a,
+#nav-menu-item-24854 > a {
+    pointer-events: auto !important;
+    cursor: pointer !important;
+}
+
+/* Hide on hover too */
+#nav-menu-item-24856:hover .preview-image,
+#nav-menu-item-24854:hover .preview-image,
+#nav-menu-item-24856:hover .mega-menu,
+#nav-menu-item-24854:hover .mega-menu,
+#nav-menu-item-24856:focus .preview-image,
+#nav-menu-item-24854:focus .preview-image,
+#nav-menu-item-24856:focus .mega-menu,
+#nav-menu-item-24854:focus .mega-menu,
+#nav-menu-item-24856:active .preview-image,
+#nav-menu-item-24854:active .preview-image,
+#nav-menu-item-24856:active .mega-menu,
+#nav-menu-item-24854:active .mega-menu {
+    display: none !important;
+    visibility: hidden !important;
+}

@@ -13,4 +13,4 @@ Copyright: © 2024 BZOTech Theme. All rights reserved.
 Tags: custom-colors, custom-menu, custom-logo, editor-style, featured-images, rtl-language-support, post-formats, sticky-post, threaded-comments, block-styles, blog, news
 Text Domain: bw-printxtore
 */
-@import url("assets/global/css/custom-style-menu.css");
+@import url('custom-style-menu.css');

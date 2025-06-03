@@ -8,19 +8,25 @@ Author: Admin
 
 // Add JavaScript to insert icons directly into the menu items
 function menu_item_icons_js() {
+    // Get WordPress home URL dynamically
+    $home_url = esc_js(home_url('/'));
     ?>
     <script>
     document.addEventListener('DOMContentLoaded', function() {
         // Using the theme's main color
         var mainColor = '#e32131';
         var iconStyle = 'margin-right: 8px; color: ' + mainColor + ';';
+        var homeUrl = '<?php echo $home_url; ?>';
         
-        // Add CSS to hide home dropdown
+        // Add CSS to completely disable home dropdown and hover effects
         var style = document.createElement('style');
         style.textContent = `
             #nav-menu-item-24856 .sub-menu,
             #nav-menu-item-24856.menu-item-has-children .sub-menu,
-            #nav-menu-item-24856 > .sub-menu {
+            #nav-menu-item-24856 > .sub-menu,
+            #nav-menu-item-24856 .preview-area,
+            #nav-menu-item-24856:hover .sub-menu,
+            #nav-menu-item-24856:hover .preview-area {
                 display: none !important;
                 visibility: hidden !important;
                 opacity: 0 !important;
@@ -30,9 +36,19 @@ function menu_item_icons_js() {
                 padding: 0 !important;
                 margin: 0 !important;
                 overflow: hidden !important;
+                position: absolute !important;
+                clip: rect(0,0,0,0) !important;
             }
-            #nav-menu-item-24856 > a::after {
+            #nav-menu-item-24856 > a::after,
+            #nav-menu-item-24856:hover > a::after {
                 display: none !important;
+            }
+            #nav-menu-item-24856 {
+                pointer-events: auto !important;
+            }
+            #nav-menu-item-24856 > a {
+                pointer-events: auto !important;
+                cursor: pointer !important;
             }
         `;
         document.head.appendChild(style);
@@ -41,24 +57,33 @@ function menu_item_icons_js() {
         var homeMenuItem = document.querySelector('#nav-menu-item-24856 > a');
         var homeMenuLi = document.querySelector('#nav-menu-item-24856');
         if (homeMenuItem && homeMenuLi) {
-            homeMenuLi.className = homeMenuLi.className.replace(/menu-item-has-children|dropdown|menu-item-object-custom/g, '');
-            var dropdownArrow = homeMenuLi.querySelector('.arrow');
-            if (dropdownArrow) dropdownArrow.remove();
-            var subMenu = homeMenuLi.querySelector('.sub-menu');
-            if (subMenu) subMenu.remove();
+            // Remove all dropdown and preview related classes
+            homeMenuLi.className = homeMenuLi.className.replace(/menu-item-has-children|dropdown|menu-item-object-custom|menu-item-has-preview/g, '').trim();
+            
+            // Remove dropdown elements
+            ['arrow', 'sub-menu', 'preview-area', 'dropdown-content'].forEach(function(className) {
+                var element = homeMenuLi.querySelector('.' + className);
+                if (element) element.remove();
+            });
+
             homeMenuItem.innerHTML = '<i class="fas fa-home" style="' + iconStyle + '"></i> Home';
-            homeMenuItem.href = '/';
+            homeMenuItem.href = homeUrl;
+            
+            // Ensure direct navigation without preview
             homeMenuItem.onclick = function(e) {
                 e.preventDefault();
-                window.location.href = '/';
+                window.location.href = homeUrl;
                 return false;
             };
-            homeMenuItem.style.cursor = 'pointer';
-            homeMenuItem.style.pointerEvents = 'auto';
+
+            // Remove all hover events
             homeMenuLi.onmouseenter = null;
             homeMenuLi.onmouseleave = null;
+            homeMenuItem.onmouseenter = null;
+            homeMenuItem.onmouseleave = null;
         }
         
+        // [Rest of the menu items remain unchanged]
         // Add icon to BLOG menu item
         var blogMenuItem = document.querySelector('#nav-menu-item-24854 > a');
         if (blogMenuItem) {
@@ -69,7 +94,7 @@ function menu_item_icons_js() {
         var aboutMenuItem = document.querySelector('#nav-menu-item-25142 > a');
         if (aboutMenuItem) {
             aboutMenuItem.innerHTML = '<i class="fas fa-info-circle" style="' + iconStyle + '"></i> About';
-            aboutMenuItem.href = "/about-us/";
+            aboutMenuItem.href = homeUrl + "about-us/";
         }
         
         // Add icon to CONTACT menu item
