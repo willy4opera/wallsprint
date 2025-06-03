@@ -12,8 +12,8 @@ function account_icon_right_css() {
         /* Target only the account icon widget and position it at the right */
         .elementor-element-883753a {
             float: right !important;
-            margin-left: 150px !important; /* Extremely large margin */
-            margin-right: -8px !important; /* Larger negative margin */
+            margin-left: 120px !important; /* Extremely large margin */
+            margin-right: -6px !important; /* Larger negative margin */
         }
     </style>';
 }

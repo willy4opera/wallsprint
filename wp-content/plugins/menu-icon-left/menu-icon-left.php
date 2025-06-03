@@ -12,7 +12,7 @@ function menu_icon_left_css() {
         /* Target the mobile menu toggle button and move it to the left */
         .toggle-mobile-menu {
             position: relative;
-            left: -20px !important; /* Move 20px to the left */
+            left: -30px !important; /* Move 20px to the left */
             margin-right: auto !important;
         }
 
@@ -21,7 +21,7 @@ function menu_icon_left_css() {
         .header-nav-default .toggle-mobile-menu,
         .bzotech-menu-container .toggle-mobile-menu {
             position: relative;
-            left: -10px !important;
+            left: -00px !important;
             float: left !important;
         }
 
