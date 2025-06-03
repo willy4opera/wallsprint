@@ -7,3 +7,41 @@
     box-shadow: 0 2px 10px rgba(0,0,0,0.1); /* Optional: adds shadow for better visibility */
     transition: all 0.3s ease; /* Smooth transition when sticking */
 }
+
+/* Center the menu icon in the header */
+.post-12195 .toggle-mobile-menu {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Ensure container has appropriate positioning */
+.post-12195 .header-nav-default,
+.post-12195 .bzotech-menu-container {
+    position: relative;
+}
+
+/* Additional mobile-specific adjustments */
+@media (max-width: 768px) {
+    .post-12195 .toggle-mobile-menu {
+        position: fixed;
+        top: 15px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 9999;
+        background-color: #2D3150;
+        color: #fff;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 22px;
+    }
+}

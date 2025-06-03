@@ -33,19 +33,3 @@ function bw_printxtore_enqueue_crypto_polyfill() {
     );
 }
 add_action('wp_enqueue_scripts', 'bw_printxtore_enqueue_crypto_polyfill', 0);  // Priority 0 to load early
-
-/**
- * Enqueue custom styles for post 12195 (header)
- * Added: June 3, 2025
- */
-function bw_printxtore_enqueue_post_12195_styles() {
-    // Check if we're on the correct post/page or anywhere the header might be displayed
-    wp_enqueue_style(
-        'bw-printxtore-header-12195-style',
-        get_template_directory_uri() . '/assets/global/css/custom-style-12195.css',
-        array(),
-        '1.0.1',
-        'all'
-    );
-}
-add_action('wp_enqueue_scripts', 'bw_printxtore_enqueue_post_12195_styles', 20);
